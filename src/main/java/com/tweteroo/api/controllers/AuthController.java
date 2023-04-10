@@ -18,7 +18,7 @@ import jakarta.validation.Valid;
 public class AuthController {
 
   @Autowired
-  AuthService service;
+  private AuthService service;
 
   @PostMapping
   public ResponseEntity<Object> signUp(@Valid @RequestBody UserDTO req) {

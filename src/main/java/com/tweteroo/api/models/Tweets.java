@@ -28,5 +28,8 @@ public class Tweets {
   private String username;
 
   @Column(length = 300, nullable = false)
+  private String avatar;
+
+  @Column(length = 300, nullable = false)
   private String tweet;
 }
