@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tweteroo.api.DTO.UserDTO;
 
 @RestController
-@RequestMapping()
+@RequestMapping("/sign-up")
 public class AuthController {
 
-  @PostMapping("sign-up")
+  @PostMapping
   public String signUp(@RequestBody UserDTO req) {
     return "OK";
   }
